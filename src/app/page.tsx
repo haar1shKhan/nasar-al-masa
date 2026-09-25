@@ -1,0 +1,362 @@
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ConsultationModal from "@/components/ConsultationModal";
+
+export default function HomePage() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      gsap.registerPlugin(ScrollTrigger);
+      const ctx = gsap.context(() => {
+        gsap.utils.toArray<HTMLElement>("section").forEach((elem, index) => {
+          if (index > 0) {
+            gsap.fromTo(
+              elem,
+              { y: 24, opacity: 0.95 },
+              {
+                y: 0,
+                opacity: 1,
+                duration: 0.7,
+                ease: "power2.out",
+                scrollTrigger: {
+                  trigger: elem,
+                  start: "top 85%",
+                  toggleActions: "play none none none"
+                }
+              }
+            );
+          }
+        });
+      }, containerRef);
+      return () => ctx.revert();
+    }
+  }, []);
+
+  return (
+    <div ref={containerRef} className="flex flex-col w-full">
+      <div className="flex flex-col w-full">
+
+<section className="relative w-full overflow-hidden py-24 lg:py-32 bg-cover bg-center text-on-primary" style={{"backgroundImage":"linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)), url(\"https://lh3.googleusercontent.com/aida/AEtjO1UoclBC0K8xOv-yBG2T_2bLXj3mALhZeWRB4jsVTX0YWxL5p3ahKmTWFoQfzc3hxqaN8y40fUW3PtbabH60-GJtlxJ8l9UJcQriU16wTSqhC6VjhoNJU-21oAXvifhEudZ7OmLfZTDG2D93fW-cLZYubWtcBLuCeRbNH5zv2MIu9U3ews9eBYwEkOMt_cPrGjfrSZt7HN4U_I0WynrH9vQNO6hgxwrYl6nCx354_djNYuyIgYPK4fNJpOw\")"}}><div className="relative max-w-[1440px] mx-auto px-margin"><div className="inline-flex items-center gap-space-xs mb-space-md px-space-md py-space-xs rounded-full bg-surface-container-lowest/10 backdrop-blur-md border border-surface-container-lowest/20"><span className="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span className="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-widest">Turnkey HVAC &amp; Vertical Mobility</span></div><div className="max-w-[1140px] mb-space-lg"><h1 className="font-display-hero text-display-hero text-on-primary tracking-tight leading-[1.08] lg:leading-[1.12]">Precision Engineering for <span className="text-secondary-fixed">High-Rise Structures</span></h1></div><div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end mb-20"><div className="lg:col-span-7"><p className="font-body-lg text-body-lg text-inverse-on-surface max-w-[640px]">Tier-1 certified installation and maintenance of industrial HVAC, high-speed elevators, and escalators across the UAE.</p></div><div className="lg:col-span-5 flex flex-wrap items-center gap-space-md lg:justify-end"><Link className="inline-flex items-center justify-center px-space-lg py-space-md bg-secondary hover:bg-secondary-container text-on-secondary font-label-md text-label-md rounded transition-all shadow-[0_4px_24px_-2px_rgba(0,0,0,0.3)]"  href="/services">Explore Services<span className="material-symbols-outlined text-[18px] ml-space-xs">arrow_forward</span></Link><a className="inline-flex items-center justify-center px-space-lg py-space-md bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary font-label-md text-label-md rounded backdrop-blur-md border border-surface-container-lowest/20 transition-all" href="https://wa.me/97142888490" rel="noopener noreferrer" target="_blank"><span className="material-symbols-outlined text-[18px] mr-space-xs text-secondary-fixed">bolt</span>WhatsApp Dispatch</a></div></div></div></section><section className="w-full bg-surface-container-lowest border-t border-b border-surface-container shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)] py-space-xl"><div className="max-w-[1440px] mx-auto px-margin"><div className="grid grid-cols-2 md:grid-cols-4 gap-gutter divide-y md:divide-y-0 md:divide-x divide-surface-container"><div className="flex flex-col space-y-space-xs p-space-md"><div className="font-display-hero text-display-hero text-primary-container tracking-tight leading-none font-bold">500<span className="text-secondary">+</span></div><span className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Vertical Installations</span></div><div className="flex flex-col space-y-space-xs p-space-md"><div className="font-display-hero text-display-hero text-primary-container tracking-tight leading-none font-bold">1.2M<span className="text-secondary">+</span></div><span className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">CFM Engineered</span></div><div className="flex flex-col space-y-space-xs p-space-md"><div className="font-display-hero text-display-hero text-primary-container tracking-tight leading-none font-bold">99.8<span className="text-secondary">%</span></div><span className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">System Uptime</span></div><div className="flex flex-col space-y-space-xs p-space-md"><div className="font-display-hero text-display-hero text-primary-container tracking-tight leading-none font-bold">15<span className="text-secondary">+</span></div><span className="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Years in UAE</span></div></div></div></section>
+
+
+
+<section className="w-full bg-surface-container-low py-24 lg:py-32">
+<div className="max-w-[1440px] mx-auto px-margin">
+
+<div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-20">
+<div>
+<span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-xs">Engineering Verticals</span>
+<h2 className="font-headline-lg text-headline-lg text-on-surface">Dual Engineering Disciplines</h2>
+</div>
+<p className="font-body-md text-body-md text-on-surface-variant max-w-[460px]">
+          Dedicated mechanical divisions providing unified project lifecycles from schematic load calculation to perpetual preventative lifecycle maintenance.
+        </p>
+</div>
+
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+
+<div className="flex flex-col bg-surface-container-lowest rounded-lg p-space-xl shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)] transition-all hover:shadow-[0_12px_32px_-4px_rgba(37,55,119,0.08)]">
+<div className="flex items-center justify-between pb-space-lg mb-space-lg bg-surface-container-lowest">
+<div className="flex items-center gap-space-md">
+<div className="w-12 h-12 rounded bg-surface-container-low flex items-center justify-center text-primary-container">
+<span className="material-symbols-outlined text-[28px]">ac_unit</span>
+</div>
+<div>
+<span className="font-label-caps text-label-caps text-on-surface-variant uppercase">Discipline 01</span>
+<h3 className="font-headline-md text-headline-md text-on-surface">Advanced HVAC Engineering</h3>
+</div>
+</div>
+<span className="font-label-caps text-label-caps bg-surface-container px-space-xs py-1 rounded text-primary-container">Climate Systems</span>
+</div>
+<div className="relative w-full h-56 rounded mb-space-lg overflow-hidden bg-surface-container-low">
+<div className="w-full h-full bg-cover bg-center"  style={{"backgroundImage":"url(\"https://lh3.googleusercontent.com/aida-public/AB6AXuARaB7m6rDr5OyzIBANAnKqSb69d5SgPA_9XzNX5wEqIWKCq86m0l_VQ-Dx35BmmfpF5_Q0Uu2mx50zpwbBHqIDcl-7xw2a-DsyYuoBAdCioqVVDVU3yoecmAg5xCaST2_ukcx-DpGxwO8rBtUoRFnDlPqJ1iuGnJ26_3F5_xLC47cEBv9Nvar5Gt5Bh7bJhH86SyDKOCnAsdqevxJYdrCI-wLOtT3YP-urheCvoUfOWXRolz8KbFSq\")"}}></div>
+</div>
+<p className="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+            High-efficiency thermal management, central chilled water plants, and cleanroom air handling engineered to handle intense GCC ambient conditions while drastically reducing kilowatt-hour consumption.
+          </p>
+
+<div className="space-y-space-md mb-space-lg flex-1">
+<div className="flex items-start justify-between py-space-xs bg-surface-container-lowest">
+<div className="flex items-center gap-space-xs">
+<span className="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span className="font-label-md text-label-md text-on-surface">Chilled Water Plant &amp; District Cooling</span>
+</div>
+<span className="font-body-sm text-body-sm text-on-surface-variant">Centrifugal &amp; Air-Cooled</span>
+</div>
+<div className="flex items-start justify-between py-space-xs bg-surface-container-lowest">
+<div className="flex items-center gap-space-xs">
+<span className="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span className="font-label-md text-label-md text-on-surface">VRV / VRF Inverter Multi-Split</span>
+</div>
+<span className="font-body-sm text-body-sm text-on-surface-variant">Commercial Mixed-Use</span>
+</div>
+<div className="flex items-start justify-between py-space-xs bg-surface-container-lowest">
+<div className="flex items-center gap-space-xs">
+<span className="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span className="font-label-md text-label-md text-on-surface">AHU, FAHU &amp; High-Static FCUs</span>
+</div>
+<span className="font-body-sm text-body-sm text-on-surface-variant">Heat Recovery 78%+</span>
+</div>
+<div className="flex items-start justify-between py-space-xs bg-surface-container-lowest">
+<div className="flex items-center gap-space-xs">
+<span className="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span className="font-label-md text-label-md text-on-surface">Precision Duct Fabrication &amp; BMS Automation</span>
+</div>
+<span className="font-body-sm text-body-sm text-on-surface-variant">BACnet / Modbus</span>
+</div>
+</div>
+<div className="pt-space-md flex items-center justify-between">
+<Link className="inline-flex items-center font-label-md text-label-md text-primary-container hover:text-primary transition-colors"  href="/services">
+              HVAC Technical Specifications
+              <span className="material-symbols-outlined text-[16px] ml-space-xs">arrow_forward</span>
+</Link>
+<span className="font-label-caps text-label-caps text-on-surface-variant">Est. 120,000+ TR Deployed</span>
+</div>
+</div>
+
+<div className="flex flex-col bg-surface-container-lowest rounded-lg p-space-xl shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)] transition-all hover:shadow-[0_12px_32px_-4px_rgba(37,55,119,0.08)]">
+<div className="flex items-center justify-between pb-space-lg mb-space-lg bg-surface-container-lowest">
+<div className="flex items-center gap-space-md">
+<div className="w-12 h-12 rounded bg-surface-container-low flex items-center justify-center text-primary-container">
+<span className="material-symbols-outlined text-[28px]">elevator</span>
+</div>
+<div>
+<span className="font-label-caps text-label-caps text-on-surface-variant uppercase">Discipline 02</span>
+<h3 className="font-headline-md text-headline-md text-on-surface">Elevator &amp; Escalator Dynamics</h3>
+</div>
+</div>
+<span className="font-label-caps text-label-caps bg-surface-container px-space-xs py-1 rounded text-primary-container">Vertical Mobility</span>
+</div>
+<div className="relative w-full h-56 rounded mb-space-lg overflow-hidden bg-surface-container-low">
+<div className="w-full h-full bg-cover bg-center"  style={{"backgroundImage":"url(\"https://lh3.googleusercontent.com/aida-public/AB6AXuB0JGh-0v1DXLBXcP-aPcQm5ur7FX8Mz5lOMhLQ5n1m-DGhgCxmcNSYSPl2iuASIw3LF3Se7XSVTP62WwLeiVeslNeE1KeTC1t-4qpSSWkhdkuIrKPaIKGxcMmCP6AESfIhLSGJ_lnMq2Ufj3uZtfwYFtYV44518oveOu_c0uVsEMXgmteWWZv_27e3OTObofXZUPc9_VpXi2eiQ5-j0icMDwfV6ae5so4eoDUGFcx2jWj1-q4xJzZi\")"}}></div>
+</div>
+<p className="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+            Complete vertical transportation ecosystems engineered with machine room-less (MRL) gearless drives, high-capacity industrial cargo lifts, and heavy transit commercial escalator configurations.
+          </p>
+
+<div className="space-y-space-md mb-space-lg flex-1">
+<div className="flex items-start justify-between py-space-xs bg-surface-container-lowest">
+<div className="flex items-center gap-space-xs">
+<span className="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span className="font-label-md text-label-md text-on-surface">High-Rise Passenger Lifts (MRL &amp; Gearless)</span>
+</div>
+<span className="font-body-sm text-body-sm text-on-surface-variant">Up to 4.0 m/s</span>
+</div>
+<div className="flex items-start justify-between py-space-xs bg-surface-container-lowest">
+<div className="flex items-center gap-space-xs">
+<span className="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span className="font-label-md text-label-md text-on-surface">Heavy Freight &amp; Vehicle Lift Platforms</span>
+</div>
+<span className="font-body-sm text-body-sm text-on-surface-variant">Up to 10,000 kg</span>
+</div>
+<div className="flex items-start justify-between py-space-xs bg-surface-container-lowest">
+<div className="flex items-center gap-space-xs">
+<span className="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span className="font-label-md text-label-md text-on-surface">Panoramic Architectural Custom Glass Cabs</span>
+</div>
+<span className="font-body-sm text-body-sm text-on-surface-variant">Curved &amp; Structural</span>
+</div>
+<div className="flex items-start justify-between py-space-xs bg-surface-container-lowest">
+<div className="flex items-center gap-space-xs">
+<span className="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span className="font-label-md text-label-md text-on-surface">Public Transit Escalators &amp; Autowalks</span>
+</div>
+<span className="font-body-sm text-body-sm text-on-surface-variant">Outdoor Heavy Duty</span>
+</div>
+</div>
+<div className="pt-space-md flex items-center justify-between">
+<Link className="inline-flex items-center font-label-md text-label-md text-primary-container hover:text-primary transition-colors"  href="/services">
+              Mobility Engineering Portfolio
+              <span className="material-symbols-outlined text-[16px] ml-space-xs">arrow_forward</span>
+</Link>
+<span className="font-label-caps text-label-caps text-on-surface-variant">Civil Defense Approved</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section className="w-full bg-surface-container-lowest py-24 lg:py-32">
+<div className="max-w-[1440px] mx-auto px-margin">
+<div className="max-w-[800px] mb-20">
+<span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-xs">Our Discipline</span>
+<h2 className="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-md">
+          Architectural Harmony Meets Uncompromised Safety.
+        </h2>
+<p className="font-body-lg text-body-lg text-on-surface-variant">
+          We eliminate the friction between architectural vision and strict mechanical viability. Every installation conforms to international life-safety metrics with zero visual compromise.
+        </p>
+</div>
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+
+<div className="flex flex-col p-space-xl bg-surface-container-lowest rounded-lg shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)]">
+<div className="font-display-hero text-display-hero text-surface-container-highest mb-space-md font-bold leading-none select-none">01</div>
+<span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider mb-space-xs">Vibration &amp; Acoustics</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Acoustic Isolation Engineering</h3>
+<p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Elimination of structural harmonics in high-speed lift counterweights and mechanical penthouse chillers through dual-stage spring attenuation and laminar airflow ducting.
+          </p>
+</div>
+
+<div className="flex flex-col p-space-xl bg-surface-container-lowest rounded-lg shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)]">
+<div className="font-display-hero text-display-hero text-surface-container-highest mb-space-md font-bold leading-none select-none">02</div>
+<span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider mb-space-xs">Thermal Yield</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface mb-space-sm">High-Delta T Optimization</h3>
+<p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Climate layouts calibrated to peak Gulf thermal loads (50°C+ ambient), operating at optimized delta temperatures to compress plant power draw by up to 28% annually.
+          </p>
+</div>
+
+<div className="flex flex-col p-space-xl bg-surface-container-lowest rounded-lg shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)]">
+<div className="font-display-hero text-display-hero text-surface-container-highest mb-space-md font-bold leading-none select-none">03</div>
+<span className="font-label-caps text-label-caps text-secondary uppercase tracking-wider mb-space-xs">Life Safety</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface mb-space-sm">Redundant Life-Safety Protocols</h3>
+<p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Full compliance with Dubai Civil Defense, EN 81, and NFPA fire dampers. Automated emergency recall descent and smoke exhaust pressurization sequences.
+          </p>
+</div>
+</div>
+
+<div className="mt-space-xl p-space-xl bg-surface-container-low rounded-lg flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div className="flex items-center gap-space-md">
+<span className="material-symbols-outlined text-[36px] text-primary-container">verified_user</span>
+<div>
+<h4 className="font-headline-sm text-headline-sm text-on-surface">Factory-Certified Technicians &amp; GCC Spares Hub</h4>
+<p className="font-body-sm text-body-sm text-on-surface-variant">Over 15,000 OEM component lines stocked in our Dubai logistics center for immediate replacement dispatch.</p>
+</div>
+</div>
+<div className="shrink-0 flex items-center gap-space-md">
+<div className="text-right">
+<span className="font-label-caps text-label-caps text-on-surface-variant uppercase">Emergency Dispatch Time</span>
+<div className="font-headline-sm text-headline-sm text-secondary font-bold">&lt; 45 Minutes in Dubai</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section className="w-full bg-surface-container-low py-24 lg:py-32">
+<div className="max-w-[1440px] mx-auto px-margin">
+<div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-20">
+<div>
+<span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-xs">Track Record</span>
+<h2 className="font-headline-lg text-headline-lg text-on-surface"> Landmark Installations</h2>
+</div>
+<Link className="inline-flex items-center font-label-md text-label-md text-primary-container hover:text-primary transition-colors"  href="/projects">
+          View All Projects
+          <span className="material-symbols-outlined text-[16px] ml-space-xs">arrow_forward</span>
+</Link>
+</div>
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+
+<div className="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)] transition-all hover:shadow-[0_12px_32px_-4px_rgba(37,55,119,0.08)]">
+<div className="relative w-full h-72 overflow-hidden bg-surface-container">
+<div className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"  style={{"backgroundImage":"url(\"https://lh3.googleusercontent.com/aida-public/AB6AXuBm_d6xIyjoXhrkZWCYqSnzKSF-Xkm3p5K1rWQn0-tNJ4TIDSgkO7DR7cHuLdWE25m-rsVvqy5cZfuByn1hXFswrqKXLcDjV7ermtiPJQz0k25muH1nrDFzu2RplVbheNbeXVm4M3gAPw2x3iAmkBhR-FqVd9TmJzdKTX23qkcdhGizR35LSs3hMm_ioulSLxlxF9dWnwtc98LjzYp91chjcuTKKD9V_LqLjkXeNSYm1_ZvFkoifK7I\")"}}></div>
+<div className="absolute top-4 left-4">
+<span className="font-label-caps text-label-caps px-space-xs py-1 rounded bg-inverse-surface/90 text-inverse-on-surface uppercase tracking-wider backdrop-blur-sm">Commercial Tower</span>
+</div>
+</div>
+<div className="p-space-lg flex flex-col flex-1">
+<span className="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Business Bay • Dubai</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface mb-space-sm group-hover:text-primary transition-colors">Vertex Horizon Tower</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant mb-space-md flex-1">
+              Supply and commissioning of 8 high-speed gearless passenger elevators (3.5 m/s) with destination dispatch and 2,400 TR central water-cooled chiller plant.
+            </p>
+<div className="pt-space-md flex items-center justify-between bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm">
+<span className="">Commissioned 2023</span>
+<span className="font-label-md text-label-md text-primary font-semibold">Turnkey MEP &amp; VT</span>
+</div>
+</div>
+</div>
+
+<div className="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)] transition-all hover:shadow-[0_12px_32px_-4px_rgba(37,55,119,0.08)]">
+<div className="relative w-full h-72 overflow-hidden bg-surface-container">
+<div className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"  style={{"backgroundImage":"url(\"https://lh3.googleusercontent.com/aida-public/AB6AXuBC_ykli5APUuXEpYFEI4t5mMq9xm80VpR1T2kEtkaAe8Hba4twRrSbq5jY6-H1sYYhgEl8kyH2ZzCKiZjryq2jhHkVP4ejp_d-bPxga_MLFHhcMm9At-Eh8BT5qZfD5_k18_ywLY3laWJkmwY77aXUYUu8vWUxVmvEnorkO64D1LncujsjookmpMFq-NlwPmKEFh3KIKojxzKG8PW32QAe3xMbcQ-MUtIv_jEVGaUBayGbM6EEpsNE\")"}}></div>
+<div className="absolute top-4 left-4">
+<span className="font-label-caps text-label-caps px-space-xs py-1 rounded bg-inverse-surface/90 text-inverse-on-surface uppercase tracking-wider backdrop-blur-sm">Luxury Hospitality</span>
+</div>
+</div>
+<div className="p-space-lg flex flex-col flex-1">
+<span className="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Saadiyat • Abu Dhabi</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface mb-space-sm group-hover:text-primary transition-colors">The Grand Azure Resort</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant mb-space-md flex-1">
+              Custom scenic panoramic elevator shafts traversing a 7-story marble atrium, combined with quiet-running acoustic fan coil systems in 320 guest suites.
+            </p>
+<div className="pt-space-md flex items-center justify-between bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm">
+<span className="">Commissioned 2023</span>
+<span className="font-label-md text-label-md text-primary font-semibold">Acoustic VRF &amp; Lifts</span>
+</div>
+</div>
+</div>
+
+<div className="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_24px_-2px_rgba(15,23,42,0.04)] transition-all hover:shadow-[0_12px_32px_-4px_rgba(37,55,119,0.08)]">
+<div className="relative w-full h-72 overflow-hidden bg-surface-container">
+<div className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"  style={{"backgroundImage":"url(\"https://lh3.googleusercontent.com/aida-public/AB6AXuDcjomq5z1ApSgsXZnAuhx8iyGDoshStkwGtDPWnNpbgEV-fowP4pwBj04ZlXgf1IpHx625_CJD5UGu6t3RGSkJmF5xzE8MtzU-78lnYymarbGZdw-GXSWU__upgRCsTczIG5S48aAdbW5OrE2E30r-H_ljbBq1DJnFh1mCf0WVOOsstGZegI4ZMggUoI7NdzJEoKvoGmKYI_i9-9ZxR-flBnnDg4Y-LJn_O_9il64-1-aOBqN624iP\")"}}></div>
+<div className="absolute top-4 left-4">
+<span className="font-label-caps text-label-caps px-space-xs py-1 rounded bg-inverse-surface/90 text-inverse-on-surface uppercase tracking-wider backdrop-blur-sm">Infrastructure Hub</span>
+</div>
+</div>
+<div className="p-space-lg flex flex-col flex-1">
+<span className="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Dubai Industrial City</span>
+<h3 className="font-headline-sm text-headline-sm text-on-surface mb-space-sm group-hover:text-primary transition-colors">Emirates Logistics Logistics Hub II</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant mb-space-md flex-1">
+              Four 5,000 kg heavy freight hydraulic elevators with automated bi-parting doors, paired with 650,000 CFM temperature-controlled distribution air handling.
+            </p>
+<div className="pt-space-md flex items-center justify-between bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm">
+<span className="">Commissioned 2024</span>
+<span className="font-label-md text-label-md text-primary font-semibold">Industrial Freight &amp; AHU</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section className="w-full bg-primary-container text-on-primary py-24 lg:py-32 relative overflow-hidden">
+<div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-container to-primary-container opacity-90 pointer-events-none"></div>
+<div className="relative max-w-[1440px] mx-auto px-margin">
+<div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+
+<div className="lg:col-span-8 flex flex-col space-y-space-md">
+<div className="inline-flex items-center gap-space-xs">
+<span className="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span className="font-label-caps text-label-caps text-secondary-fixed uppercase tracking-widest">Rapid Response Engineering Desk</span>
+</div>
+<h2 className="font-headline-lg text-headline-lg text-on-primary tracking-tight">
+            Consult on Your Next Mechanical or Vertical Transport Infrastructure.
+          </h2>
+<p className="font-body-lg text-body-lg text-inverse-on-surface max-w-[640px]">
+            Speak straight with our senior project engineers. We review drawings, assess load calculations, and issue certified technical proposals within 24 hours.
+          </p>
+</div>
+
+<div className="lg:col-span-4 flex flex-col gap-space-md lg:items-end">
+<a className="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md bg-secondary hover:bg-on-secondary-container text-on-secondary rounded font-label-md text-label-md transition-all shadow-[0_4px_24px_-2px_rgba(0,0,0,0.2)]" href="https://wa.me/97142888490" rel="noopener noreferrer" target="_blank">
+<span className="material-symbols-outlined text-[20px]">chat</span>
+<span className="">Direct WhatsApp Dispatch</span>
+</a>
+<a className="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-on-primary rounded font-label-md text-label-md backdrop-blur-md transition-all" href="tel:+97142888490">
+<span className="material-symbols-outlined text-[20px]">call</span>
+<span className="">+971 4 288 8490 (Hotline)</span>
+</a>
+<div className="flex items-center gap-space-xs text-on-primary-container text-body-sm font-body-sm pt-space-xs">
+<span className="material-symbols-outlined text-[16px] text-secondary-fixed">schedule</span>
+<span className="">Average initial response: &lt; 15 minutes</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+      <ConsultationModal isOpen={modalOpen} onClose={() => setModalOpen(false)} defaultService="Turnkey HVAC & Elevators" />
+    </div>
+  );
+}
