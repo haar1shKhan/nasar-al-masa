@@ -35,7 +35,7 @@ export default function HeroSection() {
     };
 
     return (
-        <section ref={rootRef} id="hero" className="relative w-full h-screen min-h-[940px] overflow-hidden">
+        <section ref={rootRef} id="hero" className="relative w-full h-screen min-h-[740px] overflow-hidden">
 
             {/* Layer 0 — background photo */}
             <img
