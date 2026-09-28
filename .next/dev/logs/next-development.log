@@ -1,5 +1,156 @@
-{"timestamp":"00:00:02.416","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:25.372","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:00:36.930","source":"Browser","level":"ERROR","message":"A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\nhttps://react.dev/link/hydration-mismatch\n\n  ...\n    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>\n      <AppDevOverlayErrorBoundary globalError={[...]}>\n        <ReplaySsrOnlyErrors>\n        <DevRootHTTPAccessFallbackBoundary>\n          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>\n            <HTTPAccessFallbackErrorBoundary pathname=\"/\" notFound={<NotAllowedRootHTTPFallbackError>} ...>\n              <RedirectBoundary>\n                <RedirectErrorBoundary router={{...}}>\n                  <Head>\n                  <__next_root_layout_boundary__>\n                    <SegmentViewNode type=\"layout\" pagePath=\"layout.tsx\">\n                      <SegmentTrieNode>\n                      <link>\n                      <script>\n                      <script>\n                      <RootLayout>\n                        <html lang=\"en\" className=\"plus_jakar...\">\n                          <head>\n                          <body\n                            className=\"bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen\"\n-                           cz-shortcut-listen=\"true\"\n                          >\n                  ...\n "}
-{"timestamp":"00:00:36.933","source":"Server","level":"ERROR","message":"[browser] \"A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\\n\\n- A server/client branch `if (typeof window !== 'undefined')`.\\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\\n- Date formatting in a user's locale which doesn't match the server.\\n- External changing data without sending a snapshot of it along with the HTML.\\n- Invalid HTML tag nesting.\\n\\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\\n\\nhttps://react.dev/link/hydration-mismatch\\n\\n  ...\\n    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>\\n      <AppDevOverlayErrorBoundary globalError={[...]}>\\n        <ReplaySsrOnlyErrors>\\n        <DevRootHTTPAccessFallbackBoundary>\\n          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>\\n            <HTTPAccessFallbackErrorBoundary pathname=\\\"/\\\" notFound={<NotAllowedRootHTTPFallbackError>} ...>\\n              <RedirectBoundary>\\n                <RedirectErrorBoundary router={{...}}>\\n                  <Head>\\n                  <__next_root_layout_boundary__>\\n                    <SegmentViewNode type=\\\"layout\\\" pagePath=\\\"layout.tsx\\\">\\n                      <SegmentTrieNode>\\n                      <link>\\n                      <script>\\n                      <script>\\n                      <RootLayout>\\n                        <html lang=\\\"en\\\" className=\\\"plus_jakar...\\\">\\n                          <head>\\n                          <body\\n                            className=\\\"bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen\\\"\\n-                           cz-shortcut-listen=\\\"true\\\"\\n                          >\\n                  ...\\n\" \"\""}
-{"timestamp":"00:00:44.064","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:14.629","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:17.706","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:25.123","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:25.263","source":"Browser","level":"WARN","message":"GSAP target .hero-kicker not found. https://gsap.com"}
+{"timestamp":"00:00:25.303","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-kicker not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:16:18)\\u001b[22m\""}
+{"timestamp":"00:00:25.304","source":"Browser","level":"WARN","message":"GSAP target .hero-kicker not found. https://gsap.com"}
+{"timestamp":"00:00:25.325","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-kicker not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:16:18)\\u001b[22m\""}
+{"timestamp":"00:00:25.534","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:25.792","source":"Browser","level":"WARN","message":"GSAP target .hero-kicker not found. https://gsap.com"}
+{"timestamp":"00:00:25.792","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-kicker not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:16:18)\\u001b[22m\""}
+{"timestamp":"00:00:25.793","source":"Browser","level":"WARN","message":"GSAP target .hero-kicker not found. https://gsap.com"}
+{"timestamp":"00:00:25.793","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-kicker not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:16:18)\\u001b[22m\""}
+{"timestamp":"01:53:23.240","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:53:29.020","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:53:44.145","source":"Server","level":"LOG","message":"✓ Compiled in 212ms"}
+{"timestamp":"01:54:16.604","source":"Server","level":"LOG","message":"✓ Compiled in 266ms"}
+{"timestamp":"01:54:25.369","source":"Server","level":"LOG","message":"✓ Compiled in 197ms"}
+{"timestamp":"01:54:35.358","source":"Server","level":"LOG","message":"✓ Compiled in 163ms"}
+{"timestamp":"01:54:43.372","source":"Server","level":"LOG","message":"✓ Compiled in 150ms"}
+{"timestamp":"01:54:49.897","source":"Server","level":"LOG","message":"✓ Compiled in 187ms"}
+{"timestamp":"01:55:17.564","source":"Server","level":"LOG","message":"✓ Compiled in 164ms"}
+{"timestamp":"01:55:29.738","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:55:32.536","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:55:32.657","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:55:32.700","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:55:32.700","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:55:32.713","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:55:32.713","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:55:32.780","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"01:55:32.780","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:55:32.793","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:55:32.793","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:55:32.806","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:55:32.806","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:55:32.814","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\""}
+{"timestamp":"01:56:22.007","source":"Server","level":"LOG","message":"✓ Compiled in 216ms"}
+{"timestamp":"01:56:25.089","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:56:25.219","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:56:25.220","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:56:25.220","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:56:25.221","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:56:25.221","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:56:25.221","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"01:56:25.222","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:56:25.222","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:56:25.222","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:56:25.223","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:56:25.223","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:56:25.223","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\""}
+{"timestamp":"01:56:30.547","source":"Server","level":"LOG","message":"✓ Compiled in 139ms"}
+{"timestamp":"01:56:51.515","source":"Server","level":"LOG","message":"✓ Compiled in 132ms"}
+{"timestamp":"01:57:01.028","source":"Server","level":"LOG","message":"✓ Compiled in 141ms"}
+{"timestamp":"01:57:03.461","source":"Server","level":"LOG","message":"✓ Compiled in 130ms"}
+{"timestamp":"01:57:53.881","source":"Server","level":"LOG","message":"✓ Compiled in 263ms"}
+{"timestamp":"01:58:01.369","source":"Server","level":"LOG","message":"✓ Compiled in 121ms"}
+{"timestamp":"01:58:02.888","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:58:03.045","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:58:03.046","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:03.046","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:03.047","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:03.047","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:03.047","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"01:58:03.047","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:58:03.048","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:03.048","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:03.048","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:03.048","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:03.049","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\""}
+{"timestamp":"01:58:08.625","source":"Server","level":"LOG","message":"✓ Compiled in 113ms"}
+{"timestamp":"01:58:09.591","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:58:09.691","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:58:09.692","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:09.692","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:09.692","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:09.693","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:09.693","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"01:58:09.693","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:58:09.693","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:09.693","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:09.694","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:09.694","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:09.694","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\""}
+{"timestamp":"01:58:14.805","source":"Server","level":"LOG","message":"✓ Compiled in 112ms"}
+{"timestamp":"01:58:16.109","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:58:16.212","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:58:16.213","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:16.213","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:16.213","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:16.214","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:16.214","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"01:58:16.214","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:58:16.215","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:16.215","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:16.215","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:16.215","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:16.216","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\""}
+{"timestamp":"01:58:33.955","source":"Server","level":"LOG","message":"✓ Compiled in 163ms"}
+{"timestamp":"01:58:35.409","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:58:35.505","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:58:35.505","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:35.506","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:35.506","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:35.506","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:35.506","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"01:58:35.507","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:58:35.507","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:35.507","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:35.508","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:58:35.508","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:58:35.508","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\""}
+{"timestamp":"01:58:42.912","source":"Server","level":"LOG","message":"✓ Compiled in 135ms"}
+{"timestamp":"01:59:10.037","source":"Server","level":"LOG","message":"✓ Compiled in 125ms"}
+{"timestamp":"01:59:25.000","source":"Server","level":"LOG","message":"✓ Compiled in 169ms"}
+{"timestamp":"01:59:26.550","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"01:59:26.664","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:59:26.665","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:59:26.665","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:59:26.665","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:59:26.666","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:59:26.666","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"01:59:26.666","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"01:59:26.667","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:59:26.667","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:59:26.667","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"01:59:26.667","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"01:59:26.668","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\""}
+{"timestamp":"01:59:48.470","source":"Server","level":"LOG","message":"✓ Compiled in 146ms"}
+{"timestamp":"02:00:11.824","source":"Server","level":"LOG","message":"✓ Compiled in 166ms"}
+{"timestamp":"02:00:13.581","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"02:00:13.705","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"02:00:13.705","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"02:00:13.706","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"02:00:13.706","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"02:00:13.707","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"02:00:13.707","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(<anonymous>)\\u001b[22m\""}
+{"timestamp":"02:00:13.707","source":"Browser","level":"WARN","message":"GSAP target .hero-cutout not found. https://gsap.com"}
+{"timestamp":"02:00:13.708","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target .hero-cutout not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"02:00:13.708","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"02:00:13.708","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\" \"\\u001b[2m(src/components/HeroSection.tsx:20:18)\\u001b[22m\""}
+{"timestamp":"02:00:13.709","source":"Browser","level":"WARN","message":"GSAP target  not found. https://gsap.com"}
+{"timestamp":"02:00:13.709","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mGSAP target  not found. https://gsap.com\\u001b[39m\""}
+{"timestamp":"02:05:32.516","source":"Server","level":"LOG","message":"✓ Compiled in 153ms"}
+{"timestamp":"02:06:00.215","source":"Server","level":"LOG","message":"✓ Compiled in 175ms"}
+{"timestamp":"02:06:02.364","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"02:06:10.926","source":"Server","level":"LOG","message":"✓ Compiled in 118ms"}
+{"timestamp":"02:06:14.897","source":"Server","level":"LOG","message":"✓ Compiled in 152ms"}
+{"timestamp":"02:06:23.602","source":"Server","level":"LOG","message":"✓ Compiled in 136ms"}
+{"timestamp":"02:06:25.984","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"02:07:20.493","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"02:07:20.510","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"02:07:20.899","source":"Browser","level":"ERROR","message":"Invalid DOM property `stroke-width`. Did you mean `strokeWidth`? "}
+{"timestamp":"02:07:20.900","source":"Server","level":"ERROR","message":"[browser] \"Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?\" \"\""}
+{"timestamp":"02:08:29.868","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"02:08:29.968","source":"Browser","level":"ERROR","message":"A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\nhttps://react.dev/link/hydration-mismatch\n\n  ...\n    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>\n      <AppDevOverlayErrorBoundary globalError={[...]}>\n        <ReplaySsrOnlyErrors>\n        <DevRootHTTPAccessFallbackBoundary>\n          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>\n            <HTTPAccessFallbackErrorBoundary pathname=\"/\" notFound={<NotAllowedRootHTTPFallbackError>} ...>\n              <RedirectBoundary>\n                <RedirectErrorBoundary router={{...}}>\n                  <Head>\n                  <__next_root_layout_boundary__>\n                    <SegmentViewNode type=\"layout\" pagePath=\"layout.tsx\">\n                      <SegmentTrieNode>\n                      <link>\n                      <script>\n                      <script>\n                      <RootLayout>\n                        <html lang=\"en\" className=\"plus_jakar...\">\n                          <head>\n                          <body\n                            className=\"bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen\"\n-                           cz-shortcut-listen=\"true\"\n                          >\n                  ...\n "}
+{"timestamp":"02:08:29.968","source":"Server","level":"ERROR","message":"[browser] \"A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:\\n\\n- A server/client branch `if (typeof window !== 'undefined')`.\\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\\n- Date formatting in a user's locale which doesn't match the server.\\n- External changing data without sending a snapshot of it along with the HTML.\\n- Invalid HTML tag nesting.\\n\\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\\n\\nhttps://react.dev/link/hydration-mismatch\\n\\n  ...\\n    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>\\n      <AppDevOverlayErrorBoundary globalError={[...]}>\\n        <ReplaySsrOnlyErrors>\\n        <DevRootHTTPAccessFallbackBoundary>\\n          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>\\n            <HTTPAccessFallbackErrorBoundary pathname=\\\"/\\\" notFound={<NotAllowedRootHTTPFallbackError>} ...>\\n              <RedirectBoundary>\\n                <RedirectErrorBoundary router={{...}}>\\n                  <Head>\\n                  <__next_root_layout_boundary__>\\n                    <SegmentViewNode type=\\\"layout\\\" pagePath=\\\"layout.tsx\\\">\\n                      <SegmentTrieNode>\\n                      <link>\\n                      <script>\\n                      <script>\\n                      <RootLayout>\\n                        <html lang=\\\"en\\\" className=\\\"plus_jakar...\\\">\\n                          <head>\\n                          <body\\n                            className=\\\"bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen\\\"\\n-                           cz-shortcut-listen=\\\"true\\\"\\n                          >\\n                  ...\\n\" \"\""}
+{"timestamp":"02:08:31.122","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}

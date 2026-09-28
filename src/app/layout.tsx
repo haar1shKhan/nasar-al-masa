@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/Header2";
 import Footer from "@/components/Footer";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -34,7 +34,7 @@ export default function RootLayout({
       </head>
       <body className="bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow pt-20">{children}</main>
+        <main className="flex-grow ">{children}</main>
         <Footer />
       </body>
     </html>
