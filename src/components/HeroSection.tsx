@@ -68,7 +68,7 @@ export default function HeroSection() {
             />
 
             {/* Layer 4 — tagline left, pill CTA right, on the elevator's mid-line (bottom on mobile) */}
-            <div className="absolute inset-x-0 bottom-[7vh] md:bottom-auto md:top-[46%] z-20">
+            <div className="absolute inset-x-0 bottom-[7vh] md:bottom-auto md:top-[56%] z-20">
                 <div className="max-w-[1440px] mx-auto px-margin flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
                     <p className="hero-fade max-w-[19rem] text-white font-light leading-relaxed text-[clamp(0.95rem,1.25vw,1.2rem)]">
                         Smarter, safer, and more sustainable vertical mobility for a changing world.
