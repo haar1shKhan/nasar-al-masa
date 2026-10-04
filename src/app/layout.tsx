@@ -1,41 +1,51 @@
-import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter_Tight, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header2";
-import Footer from "@/components/Footer";
+import Header from "@/components/navigation/Header";
+import Footer from "@/components/navigation/Footer";
+import TransitionProvider from "@/components/transitions/TransitionProvider";
+import PageAnimations from "@/components/transitions/PageAnimations";
 
-const plusJakarta = Plus_Jakarta_Sans({
+const sans = Inter_Tight({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-plus-jakarta",
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const mono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Nasar Al Masa Technical Services LLC | Precision HVAC & Vertical Mobility",
-  description: "Tier-1 certified installation and maintenance of industrial HVAC, central chiller plants, high-speed elevators, and escalators across the UAE.",
-  icons: {
-    icon: "https://lh3.googleusercontent.com/aida/AEtjO1XIcxJIinhVXFSzw1SNnQcffs7q8__sW8MZF9MxnmGYZB-D9ZLqF4ExuokiHr-gqAV-q9rcANWrNN_cSQlHWswstXzOchx_K8PwuufeM3n5JllXIsjxPX9q9Mqm9CHsQGwTRDSC-JP_NpSIaGWcDiVhzccz069yzO1seNX-Ukr1jrdOvxpvtQeGuon6XKZdHWXT4QgbIEsZxG6IO0biNn_rGquaYer0BzGASz_dFIvVXcc4Sg23KYaKgQ",
+  metadataBase: new URL("https://www.nasaralmasa.com"),
+  title: {
+    default: "Nasar Al Masa | Elevators, Escalators & HVAC, UAE",
+    template: "%s | Nasar Al Masa",
   },
+  description:
+    "Nasar Al Masa supplies, installs and maintains elevators, escalators and HVAC systems across the UAE. Sole supplier of FUJI Universal in the Gulf; authorised supplier and installer of GAMI air conditioning.",
+  icons: { icon: "/images/logo.png" },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export const viewport: Viewport = {
+  themeColor: "#F2EFE9",
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={plusJakarta.variable}>
+    <html lang="en" className={`${sans.variable} ${mono.variable}`} suppressHydrationWarning>
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-        />
+        {/* Enables the hidden-until-revealed states in globals.css; without JS everything stays visible */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
       </head>
-      <body className="bg-surface font-sans text-on-surface antialiased flex flex-col min-h-screen">
+      <body className="min-h-screen bg-bone font-sans text-ink antialiased">
         <Header />
-        <main className="flex-grow ">{children}</main>
+        <main>{children}</main>
         <Footer />
+        <TransitionProvider />
+        <PageAnimations />
       </body>
     </html>
   );
